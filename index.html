@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
- body {
-      padding: 1%;
-   }
-   * {
-      box-sizing: border-box;
-   }
-   .left, .right, .center {
-      float: left;
-      width: 33%;
-      color: red;
-      padding: 10px;
-      height: 500px;
-      text-align: center;
-   }
-   .left {
-      background-color: grey;
-   }
-   .right {
-      background-color: grey;
-   }
-   .center {
-      background-color: black;
-   }
-   .container:after {
-      clear: both;
-   }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ellie's Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="icon" href="https://shallowvalid-americasector.codio.io/eyedrip.png">
 </head>
+
 <body>
-<h1 style="text-align: center;">Cousin Sal Santorio's HTML Menu</h1>
-<div class="container">
-<div class="left">
-<h1>Appetizers</h1>
-<p>Mozz Sticks</p>
-<p>Garlic Bread</p>
-<p>Chips and Guac</p>
-<p>Bread and Olive oil</p>
-</div>
 
-<div class="center">
-<h1>Entree's</h1>
-<p>Cheese Pizza</p>
-<p>Chicken Parm</p>
-<p>Pasta Alfredo</p>
-<p>Fried Burrito</p>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    
+      <span class="navbar-toggler-icon"></span>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://codepen.io/Danielle-Miller/full/GRwbjjW">My Pets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://codepen.io/Danielle-Miller/full/poQmvNY">Inspiring Musical Artists</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://codepen.io/Danielle-Miller/pen/GRwPObw">More About Me</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <div class="wrapper">
+    <div class="grid-container">
+  <header class="grid-item header">
+    <h1>My About Me</h1>
+    <p>Hi, my name is Ellie! I'm a student in software development. This page is a way to demonstrate the skills I've learned so far</p>
+  </header>
+   <div id="display-flex">
+  <div class="flex-container">
+  <aside-one class="grid-item aside-one">
+    <p>My mission is to build a career for myself in coding and software development.</p>
+    <button type="button" onclick="location.href='https://www.linkedin.com/in/danielle-miller-bb1213285/';" id="mybutton">LinkedIn</button>
+      </aside-one>
+ <main class="grid-item main">
+    <h4>My journey so far</h4>
+    <p>In my jourey to become a web developer I've learned many things. What's stuck the most though is just how large a world I'm stepping in. It seems almost impossible to summarize it into words. Watching my fellow students create amazing websites and learning to write code myself has shown me the possibilities and the creativity that comes with being a web developer. I feel as if I'm opening a window into another world. I'm excited for the journey ahead and I'm eager to put everything I've learned to action.</p>
+  </main>
+    <aside-two class="grid-item aside-two">
+ <img class="img1" src="https://emailsummer-laurapandora.codio.io/elliespicture.jpg" alt="Picture of Ellie" />
+    </aside-two>
+  </div>
+  </div>
+  <footer class="grid-item footer">
+    <h2>Get in contact:</h2>
+    <form action="action">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value=""><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+    </div>
 </div>
-
-<div class="right">
-<h1>Desserts</h1>
-<p>Cannoli</p>
-<p>Cream Puff</p>
-<p>Alpine Cake</p>
-<br>
-<h2>Drinks</h2>
-<p>Espresso</p>
-<p>Wine</p>
-</div>
-
-</div>
+    
 </body>
+
 </html>
