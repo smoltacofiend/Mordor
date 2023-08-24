@@ -1,0 +1,126 @@
+nav {  border-style: ridge;
+  border-radius: 10px;
+  background-color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-indent: 5px;
+  letter-spacing: 1.5px;
+  background-color: black;
+  background-image: url(https://shallowvalid-americasector.codio.io/Untitled-Artwork%201.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+ul {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  font-size: 15px;
+}
+
+a {
+  color: #00ffff;
+}
+
+a:hover {
+  color: #ff0090;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin: 3%;
+}
+  
+grid-container {
+  display: inline-grid;
+  grid-template-areas:
+    "header header header"
+    "aside-one main main main aside-two"
+    "aside-one main main main aside-two"
+    "footer footer footer"
+    ;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  width: 40%;
+  padding-inline: 2%;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: white;
+  padding: 4px;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  border-color: white;
+  animation: slidebg 5s linear;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+aside-one {
+  grid-area: aside-one;
+  width: 30%;
+  padding-inline: 2%;
+}
+
+aside-two {
+  grid-area: aside-two;
+  width: 30%;
+  padding-inline: 2%;
+}
+
+.img1 {
+  min-height: 80px;
+  max-height: 350px;
+}
+
+.grid-item {
+  border-style: ridge;
+  border-radius: 10px;
+  background-color: black;
+  margin: 3%;
+}
+
+.flex-container {
+display: flex;
+}
+
+@media (prefers-reduced-motion) {
+  from: {
+background-position:20vw
+  }
+  to: {
+    background-position:0vw
+  }
+} 
